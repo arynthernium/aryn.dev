@@ -1,0 +1,55 @@
+@import url("./JetBrainsMono.css");
+body {
+	background-image: url('bg.svg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #ddd;
+}
+
+#main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#box:hover>#info {
+	height: 15vh;
+}
+
+#info {
+	margin: auto;
+	height: 0vh;
+	transition: height 750ms cubic-bezier(0.50, 0, 0.50, 1);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 6vh;
+	font-family: JetBrains Mono;
+}
+
+#info>div>p {
+	display: inline-block;
+}
+
+#links {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 1vh;
+	height: 6vh;
+	width: fit-content;
+}
+
+#links>a>img {
+	max-width: 100%;
+	max-height: 100%;
+}
