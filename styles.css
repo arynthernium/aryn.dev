@@ -1,5 +1,6 @@
 @import url("./JetBrainsMono.css");
 body {
+	background-color: #111;
 	background-image: url('bg.svg');
 	background-size: cover;
 	background-position: center;
